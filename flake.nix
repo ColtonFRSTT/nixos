@@ -26,8 +26,8 @@
     nixosConfigurations.xps-nixos-colton = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        ./hardware-configuration.nix
-        ./configuration.nix
+        ./hosts/xps-nixos-colton/hardware-configuration.nix
+        ./hosts/xps-nixos-colton/configuration.nix
 
         # Catppuccin NixOS module
         catppuccin.nixosModules.catppuccin
