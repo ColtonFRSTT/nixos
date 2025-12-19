@@ -1,0 +1,88 @@
+
+/* ---- Bar ---- */
+window#waybar {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #7a7a7a;               /* light text */
+  font-size: 13.5px;
+  font-weight: bold;
+}
+
+.modules-center {
+  margin: 10px 20px;
+}
+.modules-right {
+  margin: 10px 20px;
+}
+/* ---- Pill base (bigger + readable) ---- */
+.modules-left > *,
+.modules-center > widget {
+  border-radius: 4px;
+  min-width: 80px;
+  background: rgba(20, 20, 24, 0.3);
+}
+.modules-right > widget {           /* more breathing room */
+  border-radius: 4px;
+  min-width: 80px;
+  background: rgba(20, 20, 24, 0.3);  /* a bit denser for contrast */
+}
+
+/* Tighten ultra-compact modules slightly (still roomy) */
+#tray,
+#battery {
+  padding: 10px 10px;
+}
+
+#pulseaudio {
+  padding: 7px 12px;
+}
+
+/* Icons/text spacing */
+#pulseaudio {
+  padding: 10px 10px;
+}
+
+#network {
+  padding: 10px 10px;
+}
+
+#cpu {
+  padding: 10px 10px;
+}
+
+#memory {
+  padding: 10px 10px;
+}
+
+#battery {
+  padding: 10px 10px;
+}
+
+/* ---- Clock ---- */
+#clock {
+  padding: 10px 10px;
+}
+
+/* ---- Status states ---- */
+#network.disconnected,
+#pulseaudio.muted {
+  opacity: 0.75;
+}
+
+/* Battery hints (subtle glow) */
+#battery.charging {
+  box-shadow: inset 0 0 0 9999px rgba(60, 190, 110, 0.12);
+}
+#battery.critical:not(.charging) {
+  box-shadow: inset 0 0 0 9999px rgba(220, 70, 70, 0.14);
+}
+
+/* Tooltips */
+tooltip {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(24, 24, 29, 0.95);
+  color: #f5f5f5;
+}
+tooltip label { padding: 8px 10px; }

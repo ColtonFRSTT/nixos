@@ -1,0 +1,36 @@
+{
+  // Kill ALL inline ghost text engines
+  "editor.inlineSuggest.enabled": false,
+
+  // Stop the faint inline preview from IntelliSense suggestions
+  "editor.suggest.preview": false,
+
+  // Copilot: disable completions only (keep Chat)
+  "github.copilot.inlineSuggest.enable": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+
+  // "github.copilot.enable": { "*": false },
+
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.lineNumbers": "relative",
+
+  "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
+
+  "telemetry.telemetryLevel": "off",
+  "extensions.ignoreRecommendations": true,
+
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "hidden",
+  "window.commandCenter": false,
+  "workbench.colorTheme": "Catppuccin Mocha"
+
+
+}
